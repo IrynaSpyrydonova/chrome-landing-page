@@ -2,8 +2,8 @@
 <html lang='en'>
 
 <head>
-  <meta charset='utf8'>
-  <title>your project name</title>
+  <meta charset="UTF-8">
+  <title>Chrome Landing Page</title>
 
   <link href="./style.css" rel="stylesheet" />
 
@@ -22,10 +22,28 @@
   <!-- Leave this here!  It renders the review buttons  -->
   <script src='./dependencies/review-buttons/init.js'></script>
 
+  <!-- Font Awesome -->
+
+  <script src="https://kit.fontawesome.com/1f1918c2d9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
+  <div class="container">
+    <time id="time"></time>
+  <h1>
+    <span id="greeting"></span>
+    <span id="name" contenteditable="true"></span>
+  </h1>
+  <h2>What Is Your Focus For Today?</h2>
+  <h2 id="focus" contenteditable="true"></h2>
+      <div class="task-container">
+        <h1><span class="title">Today</span></h1>
+        <div class="inputDiv">
+          <input type="text" class="input" placeholder="New Todo">
+          <button class="add"><i class="fas fa-plus"></i></button>
+        </div>
+      </div>
+  </div>
+  <script src="./scripts/user-actions/index.js"></script>
 </body>
-
 </html>

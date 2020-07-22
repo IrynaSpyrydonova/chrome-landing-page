@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container {
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    color: black;
+}
+
+#time {
+    font-size: 8rem;
+}
+
+h1 {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    margin-bottom: 0.5rem;
+    opacity: 0.6;
+}
+
+.task-container {
+    align-self: flex-end;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-right: 1rem;
+    margin-bottom: -15rem;
+
+}
+
+.task-container h1 {
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: 50;
+	text-align: left;
+	margin: 0.7rem 0 3rem; 
+	font-family: 'Quicksand', sans-serif;
+}
+
+.inputDiv{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.input{
+    padding: 0.5rem;
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 100%;
+    transition: .5s;
+    font-size: 1.15rem;
+    background:rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.add{
+	outline: none;
+    border: none;
+    height: 30px;
+    border-radius: 25px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.6);
+    color:black;
+    cursor: pointer;
+    transition: .5s;
+    margin: 0.25rem;
+}
+
+.add:hover{
+	opacity: 0.8;
+}
+
+
+@media (max-width: 700px) {
+    #time {
+    font-size: 6rem;
+    }
+}
