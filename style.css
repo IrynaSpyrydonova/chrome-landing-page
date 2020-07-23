@@ -67,7 +67,7 @@ h3.author{
 
 /* TODO list */
 .task-container {
-    display: block;
+    display: none;
     position: absolute;
     bottom: 50px;
     right: 20px;
@@ -119,8 +119,64 @@ h3.author{
     margin: 0.25rem;
 }
 
+.remove{
+    outline: none;
+    border: none;
+    height: 20px;
+    width: 30px;
+    color: white;
+    background: transparent;
+    font-size: 1rem;
+    margin: 0.25rem;
+    cursor: pointer;
+    transition: .5s;
+    opacity: 0.6;
+}
+
 .add:hover{
 	opacity: 0.8;
+}
+
+.item{
+    padding: 0.5rem;
+    margin-bottom: 0.7rem;
+}
+
+.item_input{
+    background: none;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 50;
+    width: auto;
+}
+
+.checkbox{
+    margin-right: .7rem;
+    color: white;
+    width: 16px;
+    height: 16px;
+}
+
+.checkbox:checked~.item_input {
+    text-decoration: line-through
+}
+
+
+button#today {
+    position: absolute;
+    bottom: 1rem;
+    right: 4rem;
+    padding:0.5rem;
+    /* color: #fff; */
+	font-size: 1.5rem;
+	font-weight: 50;
+	text-align: left;
+    font-family: 'Quicksand', sans-serif;
+    border: none;
+    outline: none;
+    background: transparent;
 }
 
 
