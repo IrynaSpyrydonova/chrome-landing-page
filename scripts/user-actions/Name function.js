@@ -20,3 +20,6 @@ function setName(e) {
     localStorage.setItem('name', e.target.innerText);
   }
 }
+
+name.addEventListener('keypress', setName);
+name.addEventListener('blur', setName);
