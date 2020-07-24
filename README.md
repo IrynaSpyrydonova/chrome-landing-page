@@ -35,7 +35,7 @@
 
 ## About The Project
 
-![Chrome-landing-page](images\1.png)
+![Chrome-landing-page](https://github.com/gelilaa/chrome-landing-page/blob/master/images/1.png)
 
 This project aims to use work flow while practicing basic JavaScript concepts. For the purpose of this project, the 4 junior developers were partnered together to work on  the project.
 
