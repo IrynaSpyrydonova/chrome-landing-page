@@ -15,26 +15,26 @@
   <!-- load the shared data -->
   <script src='./scripts/script-variables.js'></script>
 
-  <!-- load the interaction scripts -->
-  <script src='./scripts/user-actions/_.js'></script>
+  
 
 
   <!-- Leave this here!  It renders the review buttons  -->
-  <script src='./dependencies/review-buttons/init.js'></script>
+  <script src='./dependencies/review-buttons/init.js' style="position: relative;"></script>
 
   <!-- Font Awesome -->
 
   <script src="https://kit.fontawesome.com/1f1918c2d9.js" crossorigin="anonymous"></script>
   </head>
 <body>
+  <img src="" id="background" style="top: 0;">
   <div class="container">
     <time id="time"></time>
   <h1>
     <span id="greeting"></span>
-    <span id="name" contenteditable="true"></span>
+    <span id="name" contenteditable="true">___________</span>
   </h1>
   <h2>What Is Your Focus For Today?</h2>
-  <h2 id="focus" contenteditable="true"></h2> 
+  <h2 id="focus" contenteditable="true">_________________________</h2> 
       <div class="task-container">
         <h1><span class="title">Today</span></h1>
         <div class="inputDiv">
@@ -44,8 +44,8 @@
       </div>
       <button type="button" id="today">Today</button>
       <div class="quote-container">
-        <h2 class="quote">“What would life be if we had no courage to attempt anything?”</h2>
-        <h3 class="author">Vincent van Gogh</h3>
+        <h2 id="quote">“What would life be if we had no courage to attempt anything?”</h2>
+        <h3 id="author">Vincent van Gogh</h3>
     </div>
   </div>
   <!-- Time -->
@@ -54,5 +54,13 @@
    <script src="./scripts/user-actions/button.js"></script>
    <!-- Todo list -->
    <script src="./scripts/user-actions/todolist.js"></script>
+   <!---Greetings,background and quote---->
+      <script src="./scripts/user-actions/greeting.js"></script>
+             <!---Name---->
+      <script src="./scripts/user-actions/Name function.js"></script>
+              <!---focus---->
+<script src="./scripts/user-actions/Focus function.js"></script>
+
+
 </body>
 </html>

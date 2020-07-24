@@ -1,8 +1,10 @@
 * {
-    box-sizing: border-box;
+    
     margin: 0;
     padding: 0;
     overflow: hidden;
+    position: relative;
+    
 }
 
 .container {
@@ -13,7 +15,7 @@
     justify-content: center;
     text-align: center;
     height: 100vh;
-    color: black;
+    color: whitesmoke;
 }
 
 #time {
@@ -52,15 +54,15 @@ hr {
     text-align: center;
 }
 
-h2.quote {
+h2 #quote {
     font-size: 1.5rem;
 }
 
-h3.author{
+h3#author{
     transform:scaleY(0);
 }
 
-.quote-container:hover h3.author{
+.quote-container:hover h3#author{
     transform:scaleY(1);
     transition:transform 0.3s ease-out
 }
@@ -169,7 +171,7 @@ button#today {
     bottom: 1rem;
     right: 4rem;
     padding:0.5rem;
-    /* color: #fff; */
+    color: #fff; 
 	font-size: 1.5rem;
 	font-weight: 50;
 	text-align: left;
@@ -184,4 +186,18 @@ button#today {
     #time {
     font-size: 6rem;
     }
+}
+#background 
+{
+   height:100%;
+    position: absolute;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    overflow: hidden;
+    z-index: -20;
 }
