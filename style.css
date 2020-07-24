@@ -24,29 +24,33 @@
 
 h1 {
     margin-bottom: 3rem;
+    outline: none;
 }
 
 h2 {
     margin-bottom: 0.5rem;
-    opacity: 0.6;
     outline: none;
     font-size: 1.7rem;
+    font-weight:normal;
 }
 
 h3 {
-    opacity:0.6;
     font-size: 1.2rem;
 }
 
+span{
+    outline: none;
+}
+
 hr {
-    width: 300px;
+    width: 400px;
     border:1px solid white;
 }
 
 /* Quote */
 .quote-container{
     width: auto;
-    position: absolute;
+    position: absolute; 
     bottom: 1.3rem;
     display: flex;
     flex-direction: column;
@@ -54,11 +58,13 @@ hr {
     text-align: center;
 }
 
-h2 #quote {
-    font-size: 1.5rem;
+h2#quote {
+    font-size: 1.3rem;
 }
 
 h3#author{
+    font-size: 1.1rem;
+    opacity: 0.8;
     transform:scaleY(0);
 }
 
@@ -83,7 +89,7 @@ h3#author{
 .task-container h1 {
 	color: #fff;
 	font-size: 1.5rem;
-	font-weight: 50;
+	font-weight:bold;
 	text-align: left;
 	margin: 0.7rem 0 3rem; 
 	font-family: 'Quicksand', sans-serif;
@@ -150,7 +156,6 @@ h3#author{
     border: none;
     color: #fff;
     font-size: 1.2rem;
-    font-weight: 50;
     width: auto;
 }
 
@@ -168,12 +173,12 @@ h3#author{
 
 button#today {
     position: absolute;
-    bottom: 1rem;
+    bottom: 1.5rem;
     right: 4rem;
     padding:0.5rem;
     color: #fff; 
 	font-size: 1.5rem;
-	font-weight: 50;
+	font-weight: bold;
 	text-align: left;
     font-family: 'Quicksand', sans-serif;
     border: none;
